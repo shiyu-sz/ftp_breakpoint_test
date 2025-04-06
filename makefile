@@ -1,6 +1,8 @@
 CC = gcc
 CXXFLAGS = -ggdb3 -Wall
 TARGET = ftp_breakpoint
+LIB += -lcurl
+
 all : $(TARGET)
 
 $(TARGET) : ftp_breakpoint.o
